@@ -1,0 +1,91 @@
+body{
+    background: #212121;
+}
+html, a{
+    color:#f5f8fa;
+}
+
+
+#slider{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/music_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#finder{
+    box-shadow: 0px 0px 10px #000;
+    background: rgba(33, 33, 33, 0.8);
+    width: 80%;
+}
+
+
+
+#sidenav{
+    height: 100vh;
+    background: #111111;
+    width: 300px;
+    box-shadow: 0px -1px 5px #000;
+    position: fixed;
+    top: 0px;
+    right: -310px;
+    z-index: 999;
+    transition: all .5s;
+}
+.sidenav--opener{
+    position: absolute;
+    background: #111111;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    top: 50px;
+    right: 0px;
+    width: 30px;
+    height: 45px;
+}
+.sidenav--opener i{
+    cursor: pointer;
+    padding-left: 6px;
+}
+.sidenav--close{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: #000;
+    opacity: .5;
+    z-index: 998;
+    display: none;
+}
+#sidenav__header{
+    padding: 20px 30px;
+}
+#sidenav__body{
+    
+}
+#sidenav__links li a,#sidenav__footer a{
+    padding: 8px 30px;
+    display: block;
+}
+#sidenav__links li:hover,#sidenav__footer a:hover{
+    background-color: #151515;
+}
+#sidenav__links li:hover .fa,#sidenav__footer a:hover .fa{
+    color: #f5f8fa;
+}
+#sidenav__footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+.sidenav--title{
+    font-size:20px;
+}
+.menu-icons{
+    color:#333333;
+    margin-right: 8px;
+}
